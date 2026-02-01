@@ -1,3 +1,17 @@
+from rich.table import Table
+from rich.panel import Panel
+from rich.layout import Layout
+from rich.text import Text
+from rich.align import Align
+
+from utils.utils import (
+    get_terminal_size,
+    truncate_text,
+    create_bar,
+    get_color_for_percent,
+    format_sparkline,
+)
+
 def create_header_panel(info, width, mode):
     """Create adaptive header panel."""
     kernel_display = truncate_text(info["kernel"], max(15, width // 5))

@@ -1,3 +1,26 @@
+from rich.table import Table
+from rich.panel import Panel
+from rich.layout import Layout
+from rich.text import Text
+from rich.align import Align
+
+from utils.utils import (
+    get_terminal_size,
+    truncate_text,
+    create_bar,
+    get_color_for_percent,
+    format_sparkline,
+)
+
+from hardware.hardware import (
+    get_cpu_data,
+    get_temps,
+    get_battery,
+    get_mem,
+    get_storage,
+    get_disk_io,
+)
+
 def create_resources_panel(width, mode, history=None):
     """Create adaptive memory and storage panel."""
     mem = get_mem()

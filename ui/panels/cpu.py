@@ -1,3 +1,35 @@
+from rich.table import Table
+from rich.panel import Panel
+from rich.layout import Layout
+from rich.text import Text
+from rich.align import Align
+
+from utils.utils import (
+    get_terminal_size,
+    truncate_text,
+    create_bar,
+    get_color_for_percent,
+    format_sparkline,
+)
+
+
+from hardware.hardware import (
+    get_cpu_data,
+    get_temps,
+    get_battery,
+    get_mem,
+    get_storage,
+    get_disk_io,
+)
+
+from utils.system_info import get_sys_info, get_load_info, get_top_processes
+
+def _pad_row(ncols, values):
+    vals = list(values)
+    if len(vals) < ncols:
+        vals.extend([""] * (ncols - len(vals)))
+    return vals[:ncols]
+
 def create_cpu_panel(width, mode, history=None):
     """Create adaptive CPU panel with optional sparkline history."""
     cpu_table = Table(
