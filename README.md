@@ -399,7 +399,7 @@ Contributions are welcome! Here's how:
 
 ### Reporting Bugs
 
-1. Check [existing issues](https://github.com/yourusername/Termux-System-Monitor/issues)
+1. Check [existing issues](https://github.com/Night-Traders-Dev/Termux-System-Monitor/issues)
 2. Create a new issue with:
    - Device info (Android version, SoC)
    - Termux/Proot version
@@ -489,8 +489,8 @@ SOFTWARE.
 **Need help?**
 - 📧 Email: your.email@example.com
 - 💬 Discord: [Join our server](#)
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/Termux-System-Monitor/issues)
-- 📖 Wiki: [Project Wiki](https://github.com/yourusername/Termux-System-Monitor/wiki)
+- 🐛 Issues: [GitHub Issues](https://github.com/Night-Traders-Dev/Termux-System-Monitor/issues)
+- 📖 Wiki: [Project Wiki](https://github.com/Night-Traders-Dev/Termux-System-Monitor/wiki)
 
 **Found this useful?**
 - ⭐ Star the repository
@@ -501,10 +501,10 @@ SOFTWARE.
 
 ## 📊 Project Stats
 
-![GitHub stars](https://img.shields.io/github/stars/yourusername/Termux-System-Monitor?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/Termux-System-Monitor?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/Termux-System-Monitor)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/Termux-System-Monitor)
+![GitHub stars](https://img.shields.io/github/stars/Night-Traders-Dev/Termux-System-Monitor?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Night-Traders-Dev/Termux-System-Monitor?style=social)
+![GitHub issues](https://img.shields.io/github/issues/Night-Traders-Dev/Termux-System-Monitor)
+![GitHub last commit](https://img.shields.io/github/last-commit/Night-Traders-Dev/Termux-System-Monitor)
 
 ---
 
@@ -534,6 +534,6 @@ A: Not recommended (it's a TUI). For background monitoring, consider writing log
 
 **Made with ❤️ for the Termux community**
 
-[Report Bug](https://github.com/yourusername/Termux-System-Monitor/issues) · [Request Feature](https://github.com/yourusername/Termux-System-Monitor/issues) · [Contribute](https://github.com/yourusername/Termux-System-Monitor/pulls)
+[Report Bug](https://github.com/Night-Traders-Dev/Termux-System-Monitor/issues) · [Request Feature](https://github.com/Night-Traders-Dev/Termux-System-Monitor/issues) · [Contribute](https://github.com/Night-Traders-Dev/Termux-System-Monitor/pulls)
 
 </div>
