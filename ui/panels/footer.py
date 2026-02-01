@@ -1,3 +1,14 @@
+from rich.panel import Panel
+from rich.text import Text
+from rich.align import Align
+
+from utils.ui import (
+    get_omissions
+
+)
+
+
+
 def create_footer_panel(width, height, mode):
     """Create footer showing terminal size and omitted information."""
     omissions = get_omissions()

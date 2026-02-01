@@ -1,31 +1,17 @@
 # ui.py - Enhanced version with footer and omission tracking + CPU usage source suffix
 
-from rich.table import Table
-from rich.panel import Panel
 from rich.layout import Layout
-from rich.text import Text
-from rich.align import Align
+
 
 from utils.utils import (
-    get_terminal_size,
-    truncate_text,
-    create_bar,
-    get_color_for_percent,
-    format_sparkline,
+    get_terminal_size
 )
 
-from utils.system_info import get_sys_info, get_load_info, get_top_processes
-
-from hardware.hardware import (
-    get_cpu_data,
-    get_temps,
-    get_battery,
-    get_mem,
-    get_storage,
-    get_disk_io,
+from utils.system_info import get_sys_info
+from utils.ui import (
+    reset_omissions,
+    determine_layout_mode
 )
-
-from utils.network import get_net_stats
 
 from ui.panels.cpu import create_cpu_panel
 from ui.panels.footer import create_footer_panel
@@ -34,44 +20,6 @@ from ui.panels.network import create_network_panel
 from ui.panels.processes import create_processes_panel
 from ui.panels.resources import create_resources_panel
 from ui.panels.sensors import create_sensors_panel
-
-# Track what information is omitted for footer display
-_omissions = []
-
-
-def reset_omissions():
-    """Clear omission tracking for new render cycle."""
-    global _omissions
-    _omissions = []
-
-
-def add_omission(item):
-    """Track an omitted piece of information."""
-    global _omissions
-    if item and item not in _omissions:
-        _omissions.append(item)
-
-
-def get_omissions():
-    """Get list of currently omitted information."""
-    return _omissions
-
-
-def determine_layout_mode(width, height):
-    """Determine which layout mode to use based on terminal size."""
-    if width < 60 or height < 15:
-        return "minimal"  # Very compact, stack everything
-    elif width < 90 or height < 20:
-        return "compact"  # Single column
-    else:
-        return "full"  # Multi-column
-
-
-def _pad_row(ncols, values):
-    vals = list(values)
-    if len(vals) < ncols:
-        vals.extend([""] * (ncols - len(vals)))
-    return vals[:ncols]
 
 
 
