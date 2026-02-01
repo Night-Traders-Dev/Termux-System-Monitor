@@ -91,8 +91,8 @@ pkg install termux-api
 **Method 1: Direct Download**
 ```bash
 # Clone or download the repository
-git clone https://github.com/yourusername/termux-monitor.git
-cd termux-monitor
+git clone https://github.com/Night-Traders-Dev/Termux-System-Monitor.git
+cd Termux-System-Monitor
 
 # Run directly
 python main.py
