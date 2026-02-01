@@ -1,5 +1,5 @@
 import time
-from utils import get_state
+from utils.utils import get_state
 
 def get_net_stats():
     """Enhanced network stats with interface breakdown."""

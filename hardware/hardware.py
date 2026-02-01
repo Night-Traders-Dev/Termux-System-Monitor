@@ -5,7 +5,7 @@ import subprocess
 import json
 import time
 
-from utils import get_state
+from utils.utils import get_state
 
 
 def _read_int(path):

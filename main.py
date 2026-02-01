@@ -3,10 +3,10 @@
 import time
 from rich.live import Live
 from rich.console import Console
-from system_info import check_dependencies
-from ui import generate_layout
-from utils import get_state, update_history
-from hardware import get_cpu_data, get_mem
+from utils.system_info import check_dependencies
+from ui.ui import generate_layout
+from utils.utils import get_state, update_history
+from hardware.hardware import get_cpu_data, get_mem
 
 console = Console()
 

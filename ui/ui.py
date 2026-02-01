@@ -6,7 +6,7 @@ from rich.layout import Layout
 from rich.text import Text
 from rich.align import Align
 
-from utils import (
+from utils.utils import (
     get_terminal_size,
     truncate_text,
     create_bar,
@@ -14,9 +14,9 @@ from utils import (
     format_sparkline,
 )
 
-from system_info import get_sys_info, get_load_info, get_top_processes
+from utils.system_info import get_sys_info, get_load_info, get_top_processes
 
-from hardware import (
+from hardware.hardware import (
     get_cpu_data,
     get_temps,
     get_battery,
@@ -25,7 +25,7 @@ from hardware import (
     get_disk_io,
 )
 
-from network import get_net_stats
+from utils.network import get_net_stats
 
 
 # Track what information is omitted for footer display
