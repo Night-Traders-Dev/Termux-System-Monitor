@@ -101,15 +101,15 @@ python main.py
 **Method 2: System-Wide Installation**
 ```bash
 # Create installation directory
-mkdir -p $PREFIX/share/termux-monitor
+mkdir -p $PREFIX/share/Termux-System-Monitor
 
 # Copy files (adjust paths based on your structure)
-cp -r . $PREFIX/share/termux-monitor/
+cp -r . $PREFIX/share/Termux-System-Monitor/
 
 # Create launcher script
 cat > $PREFIX/bin/sysmon << 'EOF'
 #!/bin/bash
-cd $PREFIX/share/termux-monitor
+cd $PREFIX/share/Termux-System-Monitor
 exec python main.py "$@"
 EOF
 
@@ -124,7 +124,7 @@ sysmon
 ## 📁 Project Structure
 
 ```
-termux-monitor/
+Termux-System-Monitor/
 ├── main.py                 # Entry point and main loop
 │
 ├── hardware/
@@ -370,7 +370,7 @@ with Live(..., refresh_per_second=1, ...):  # 1 Hz instead of 2 Hz
 ## 🛣️ Roadmap
 
 ### v2.1 (Near Term)
-- [ ] Configuration file support (`~/.config/termux-monitor/config.yaml`)
+- [ ] Configuration file support (`~/.config/Termux-System-Monitor/config.yaml`)
 - [ ] Command-line arguments (`--mode compact`, `--refresh 4`)
 - [ ] Network traffic sparklines
 - [ ] CPU governor display
@@ -399,7 +399,7 @@ Contributions are welcome! Here's how:
 
 ### Reporting Bugs
 
-1. Check [existing issues](https://github.com/yourusername/termux-monitor/issues)
+1. Check [existing issues](https://github.com/yourusername/Termux-System-Monitor/issues)
 2. Create a new issue with:
    - Device info (Android version, SoC)
    - Termux/Proot version
@@ -489,8 +489,8 @@ SOFTWARE.
 **Need help?**
 - 📧 Email: your.email@example.com
 - 💬 Discord: [Join our server](#)
-- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/termux-monitor/issues)
-- 📖 Wiki: [Project Wiki](https://github.com/yourusername/termux-monitor/wiki)
+- 🐛 Issues: [GitHub Issues](https://github.com/yourusername/Termux-System-Monitor/issues)
+- 📖 Wiki: [Project Wiki](https://github.com/yourusername/Termux-System-Monitor/wiki)
 
 **Found this useful?**
 - ⭐ Star the repository
@@ -501,10 +501,10 @@ SOFTWARE.
 
 ## 📊 Project Stats
 
-![GitHub stars](https://img.shields.io/github/stars/yourusername/termux-monitor?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/termux-monitor?style=social)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/termux-monitor)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/termux-monitor)
+![GitHub stars](https://img.shields.io/github/stars/yourusername/Termux-System-Monitor?style=social)
+![GitHub forks](https://img.shields.io/github/forks/yourusername/Termux-System-Monitor?style=social)
+![GitHub issues](https://img.shields.io/github/issues/yourusername/Termux-System-Monitor)
+![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/Termux-System-Monitor)
 
 ---
 
@@ -534,6 +534,6 @@ A: Not recommended (it's a TUI). For background monitoring, consider writing log
 
 **Made with ❤️ for the Termux community**
 
-[Report Bug](https://github.com/yourusername/termux-monitor/issues) · [Request Feature](https://github.com/yourusername/termux-monitor/issues) · [Contribute](https://github.com/yourusername/termux-monitor/pulls)
+[Report Bug](https://github.com/yourusername/Termux-System-Monitor/issues) · [Request Feature](https://github.com/yourusername/Termux-System-Monitor/issues) · [Contribute](https://github.com/yourusername/Termux-System-Monitor/pulls)
 
 </div>
